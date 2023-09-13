@@ -1,0 +1,30 @@
+.alert {
+  width: 100%;
+  padding: 10px;
+  text-wrap: pretty;
+  border-radius: 5px;
+}
+
+.alert-primary {
+  background-color: var(--aquamarine);
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+.alert-info {
+  background-color: var(--info);
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.alert-dark {
+  background-color: var(--black);
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.alert-light {
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
+}

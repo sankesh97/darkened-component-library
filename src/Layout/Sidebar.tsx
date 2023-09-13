@@ -39,6 +39,13 @@ const Sidebar = () => {
         Darkened React Component Library.
         <br /> Created with <strong>React</strong>, <strong>TS</strong>, and{' '}
         <strong>❤️</strong>
+        <br />
+        <a
+          href='https://github.com/sankesh97/darkened-component-library'
+          target='_blank'
+        >
+          Github Link
+        </a>
       </footer>
     </aside>
   );

@@ -22,6 +22,9 @@ const Sidebar = () => {
             <NavLink to='/components/badge'>Badges</NavLink>
           </li>
           <li>
+            <NavLink to='/components/buttons'>Buttons</NavLink>
+          </li>
+          <li>
             <NavLink to='/components/card'>Cards</NavLink>
           </li>
           <li>

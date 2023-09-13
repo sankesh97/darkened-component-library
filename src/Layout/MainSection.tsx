@@ -8,6 +8,7 @@ import BadgeDoc from '../Pages/documentation/BadgeDoc';
 import HeadingsDoc from '../Pages/documentation/HeadingsDoc';
 import TextDoc from '../Pages/documentation/TextDoc';
 import ImageDoc from '../Pages/documentation/ImageDoc';
+import ButtonDoc from '../Pages/documentation/ButtonDoc';
 
 const MainSection = () => {
   return (
@@ -22,6 +23,7 @@ const MainSection = () => {
         <Route path='/components/headings' element={<HeadingsDoc />}></Route>
         <Route path='/components/image' element={<ImageDoc />}></Route>
         <Route path='/components/text' element={<TextDoc />}></Route>
+        <Route path='/components/buttons' element={<ButtonDoc />}></Route>
       </Routes>
     </main>
   );

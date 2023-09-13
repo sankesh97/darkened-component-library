@@ -10,9 +10,6 @@ const Sidebar = () => {
       <nav>
         <ul className='navmenu'>
           <li>
-            <NavLink to='/components'>All Components</NavLink>
-          </li>
-          <li>
             <NavLink to='/components/alerts'>Alerts</NavLink>
           </li>
           <li>

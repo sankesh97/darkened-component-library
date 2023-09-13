@@ -1,7 +1,5 @@
 import homepageImage from '../../Assets/homepage-img.svg';
-import Badges from '../../components/Badge/Badges';
-import FloatingActionButton from '../../components/Button/FloatingActionButton';
-import IconButton from '../../components/Button/IconButton';
+import Card from '../../components/Card/Card';
 import './Home.css';
 
 const Home = () => {
@@ -12,11 +10,9 @@ const Home = () => {
       <h1>The Component Library</h1>
       <br />
       <p>Elevate your React projects with our component magic.</p>
-      <IconButton icon={'bi bi-0-square'}></IconButton>
-      <FloatingActionButton icon={'bi bi-0-square'}></FloatingActionButton>
-      <Badges badgeContent={1}>
-        <i className='bi bi-0-square'></i>
-      </Badges>
+      <Card cardWithDismiss cardBadge='Info' orientation='horizontal'>
+        <p>Hello World</p>
+      </Card>
     </div>
   );
 };

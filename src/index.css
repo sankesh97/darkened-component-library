@@ -22,3 +22,8 @@ h1 {
 .text-center {
   text-align: center;
 }
+
+.components-display {
+  background-color: lightgray;
+  padding: 20px;
+}

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './Card.css';
 
 type CardType = {
@@ -17,20 +18,25 @@ const Card = ({
   cardBadge,
   children,
 }: CardType) => {
+  const [openState, setOpenState] = useState(true);
   return (
-    <div
-      className={`card ${
-        cardShadow ? 'card-shadow' : null
-      } ${orientation} ${typeOfCard}`}
-    >
-      {cardBadge && <span className=''></span>}
-      {cardWithDismiss && (
-        <span className='dismiss'>
-          <i className='bi bi-x-circle-fill'></i>
-        </span>
+    <>
+      {openState && (
+        <div
+          className={`card ${
+            cardShadow && 'card-shadow'
+          } ${orientation} ${typeOfCard}`}
+        >
+          {cardBadge && <span className='card-badge'>{cardBadge}</span>}
+          {cardWithDismiss && (
+            <span onClick={() => setOpenState(!openState)} className='dismiss'>
+              <i className='bi bi-x-circle'></i>
+            </span>
+          )}
+          <div className='card-content'>{children}</div>
+        </div>
       )}
-      {children}
-    </div>
+    </>
   );
 };
 export default Card;

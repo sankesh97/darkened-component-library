@@ -26,10 +26,15 @@
   }
   .sidebar {
     width: auto;
+    position: initial;
   }
 
   .mainsection {
-    width: auto;
+    width: initial;
+    min-height: initial;
+    overflow-y: initial;
+    padding: initial;
+    color: var(--black);
   }
 
   .navmenu {

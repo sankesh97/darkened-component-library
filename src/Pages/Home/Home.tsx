@@ -1,5 +1,4 @@
 import homepageImage from '../../Assets/homepage-img.svg';
-import Avatar from '../../components/Avatar/Avatar';
 import Badges from '../../components/Badge/Badges';
 import FloatingActionButton from '../../components/Button/FloatingActionButton';
 import IconButton from '../../components/Button/IconButton';
